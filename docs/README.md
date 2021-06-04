@@ -1,6 +1,6 @@
 # Final Project
 
-https://observablehq.com/d/841d33aaf73caa73@2280
+https://observablehq.com/d/2097346d12413f13@2552
 
 View this notebook in your browser by running a web server in this folder. For
 example:
@@ -14,14 +14,14 @@ import this module directly into your application. To npm install:
 
 ~~~sh
 npm install @observablehq/runtime@4
-npm install https://api.observablehq.com/d/841d33aaf73caa73@2280.tgz?v=3
+npm install https://api.observablehq.com/d/2097346d12413f13@2552.tgz?v=3
 ~~~
 
 Then, import your notebook and the runtime as:
 
 ~~~js
 import {Runtime, Inspector} from "@observablehq/runtime";
-import define from "841d33aaf73caa73";
+import define from "2097346d12413f13";
 ~~~
 
 To log the value of the cell named “foo”:
