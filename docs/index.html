@@ -11,7 +11,6 @@
 <div name="legend"></div>
 <div name="plcoord"></div>
 <div name="button"></div>
-<div name="table"></div>
 <body>
 <script type="module">
 
@@ -20,7 +19,7 @@ import {Runtime, Library, Inspector} from "./runtime.js";
 
 const runtime = new Runtime();
 const main = runtime.module(define, name => {
-  if (["markdown", "how-to", "viewof var_select", "viewof color_select", "legend", "plcoord", "button", "table"].includes(name)) {
+  if (["markdown", "how-to", "viewof var_select", "viewof color_select", "legend", "plcoord", "button"].includes(name)) {
     return new Inspector(document.querySelector(`[name='${name}']`));
   }
 });
