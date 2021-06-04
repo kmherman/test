@@ -211,7 +211,7 @@ Legend({color: color, title: longNames.get(color_select)})
   return svg.node();
 }
 );
-  main.variable(observer()).define(["DOM","serialize","selected_data"], function(DOM,serialize,selected_data){return(
+  main.variable(observer("button")).define(["DOM","serialize","selected_data"], function(DOM,serialize,selected_data){return(
 DOM.download(serialize(selected_data), "cluster_db_selection.csv", "Download Selection")
 )});
   main.variable(observer()).define(["printTable","selected_data"], function(printTable,selected_data){return(
