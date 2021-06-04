@@ -21,6 +21,7 @@ a:link:not(:hover) {
 <h1><a href="https://github.com/observablehq/examples">Observable Example</a>: <a href="https://github.com/observablehq/examples/tree/main/standalone">Standalone</a></h1>
 <p>This example demonstrates a standalone Observable notebook with no external dependencies.</p>
 <h2>The most populous cities in the world, 1575–2020</h2>
+<div name="var_select"></div>
 <div name="plcoord"></div>
 <script src="d3.js"></script>
 <script type="module">
@@ -39,7 +40,7 @@ const runtime = new Runtime(new Library(name => {
 // Show the output of the “chart” and “viewof replay” cells in the DIV elements
 // with the corresponding name.
 const main = runtime.module(notebook, name => {
-  if (["plcoord"].includes(name)) {
+  if (["var_select", "plcoord"].includes(name)) {
     return new Inspector(document.querySelector(`[name='${name}']`));
   }
 });
@@ -49,6 +50,6 @@ const main = runtime.module(notebook, name => {
 
 // Redefine the “k” cell to disable tweening between keyframes. (This dataset is
 // already interpolated.)
-main.redefine("k", 1);
+//main.redefine("k", 1);
 
 </script>
