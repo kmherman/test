@@ -10,27 +10,6 @@ md`# Final Project`
   main.variable(observer("markdown")).define("markdown", ["md"], function(md){return(
 md`
 ---
-### Milestone Review:
-Based on our original proposal, we had three main goals.
-1. Extend our A3 visualization of ~1,000 data points to the full dataset of ~200,000.
-2. Incorporate a representation of the density of lines through each axis to mitigate concerns of overplotting.
-3. Allow the user to download XYZ coordinates for the water clusters selected by the brush.
-
-Accomplishments (so far):
-* Added histograms on each axis that update based on brushing. These histograms are produced with the full dataset of ~200,000 data points.
-* Changed the names of the check boxes to match the names on the axes (based on feedback from A3 peer review)
-* Moved the location of axis labels (based on feedback from A3 peer review)
-* Allowed user to color encode variables that are not selected by the check boxes (based on feedback from A3 peer review)
-* Added a "title" to let the user know how many water clusters are selected by the brush. This way, they will know how many structures they will be downloading.
-
-Changes to the original proposal:
-* Originally, we were planning on drawing ~200,000 lines to represent the entire dataset. However, since there would be significant overplotting, this doesn't seem like a good way to represent the data (especially after today's lecture!). What is shown in our visualization are histograms based on all ~200,000 data points while the lines are drawn with the smaller subsection of the data (~1,000 lines). By *sampling* the data to draw the lines (and using the full dataset for the histograms), the interactive features are a bit faster and we feel that we represent the data well without overplotting. We would love to hear ideas/feedback from the course staff on this!
-
-What we have yet to complete:
-* The ability for the user to download the XYZ coordinates for the water clusters selected.
-* Attempt to make the visualization faster.
-
----
 
 ### Background on Water Clusters:
 
