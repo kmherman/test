@@ -40,7 +40,7 @@ const runtime = new Runtime(new Library(name => {
 // Show the output of the “chart” and “viewof replay” cells in the DIV elements
 // with the corresponding name.
 const main = runtime.module(notebook, name => {
-  if (["markdown", "var_select", "plcoord"].includes(name)) {
+  if (["color_select", "var_select", "plcoord"].includes(name)) {
     return new Inspector(document.querySelector(`[name='${name}']`));
   }
 });
