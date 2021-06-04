@@ -214,7 +214,7 @@ Legend({color: color, title: longNames.get(color_select)})
   main.variable(observer("button")).define(["DOM","serialize","selected_data"], function(DOM,serialize,selected_data){return(
 DOM.download(serialize(selected_data), "cluster_db_selection.csv", "Download Selection")
 )});
-  main.variable(observer()).define(["printTable","selected_data"], function(printTable,selected_data){return(
+  main.variable(observer("table")).define(["printTable","selected_data"], function(printTable,selected_data){return(
 printTable(selected_data.slice(0,10), [{field: "NumWaters", title: "Number of molecules", align: "c"}, {field: "NumHBonds", title: "Number of H Bonds", align: "c"}, {field: "NumFreeOH", title: "Number of Free OH", align: "c"}, {field: "ThreeCycles", title: "Number of 3 cycles", align: "c"}, {field: "FourCycles", title: "Number of 4 cycles", align: "c"}, {field: "FiveCycles", title: "Number of 5 cycles", align: "c"}, {field: "Energy", title: "Binding Energy (kcal/mol)", align: "c"}])
 )});
   main.define("initial selected_data", ["wc_data_full"], function(wc_data_full){return(
