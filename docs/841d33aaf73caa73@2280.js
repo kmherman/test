@@ -49,7 +49,7 @@ All of the above-mentioned water cluster features can be swapped in and out of t
 
 `
 )});
-  main.variable(observer()).define(["md"], function(md){return(
+  main.variable(observer("how-to")).define(["md"], function(md){return(
 md`
 ### How To:
 - To filter some lines on the parallel coordinates plot, click and drag along any axis
