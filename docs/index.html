@@ -5,6 +5,7 @@
 <div name="markdown"></div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ecZbNzvjRLk" 
         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div name="how-to"></div>
 <div name="viewof var_select"></div>
 <div name="viewof color_select"></div>
 <div name="legend"></div>
@@ -17,7 +18,7 @@ import {Runtime, Library, Inspector} from "./runtime.js";
 
 const runtime = new Runtime();
 const main = runtime.module(define, name => {
-  if (["markdown", "viewof var_select", "viewof color_select", "legend", "plcoord"].includes(name)) {
+  if (["markdown", "how-to", "viewof var_select", "viewof color_select", "legend", "plcoord"].includes(name)) {
     return new Inspector(document.querySelector(`[name='${name}']`));
   }
 });
