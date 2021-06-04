@@ -12,7 +12,7 @@ import define from "./index.js";
 import {Runtime, Library, Inspector} from "./runtime.js";
 
 const runtime = new Runtime();
-const main = runtime.module(notebook, name => {
+const main = runtime.module(define, name => {
   if (["var_select", "color_select", "plcoord"].includes(name)) {
     return new Inspector(document.querySelector(`[name='${name}']`));
   }
