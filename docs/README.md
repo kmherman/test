@@ -1,6 +1,6 @@
 # Final Project
 
-https://observablehq.com/d/841d33aaf73caa73@3085
+https://observablehq.com/d/841d33aaf73caa73@3141
 
 View this notebook in your browser by running a web server in this folder. For
 example:
@@ -14,7 +14,7 @@ import this module directly into your application. To npm install:
 
 ~~~sh
 npm install @observablehq/runtime@4
-npm install https://api.observablehq.com/d/841d33aaf73caa73@3085.tgz?v=3
+npm install https://api.observablehq.com/d/841d33aaf73caa73@3141.tgz?v=3
 ~~~
 
 Then, import your notebook and the runtime as:
