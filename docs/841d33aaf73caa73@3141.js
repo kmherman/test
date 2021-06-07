@@ -344,9 +344,6 @@ function progress(options) {
   main.variable(observer("Inspector")).define("Inspector", ["require"], async function(require){return(
 (await require('@observablehq/notebook-inspector@1.1.1/dist/notebook-inspector.umd.js')).Inspector
 )});
-  main.variable(observer()).define(["table","selected_data"], function(table,selected_data){return(
-table(selected_data.slice(0,250))
-)});
   main.define("initial selected_data", ["wc_data_full"], function(wc_data_full){return(
 wc_data_full
 )});
@@ -666,7 +663,6 @@ d3.scaleSequential(y.get(color_select).domain(), t => d3.interpolateRdYlBu(1-t))
 require("json2csv")
 )});
   const child6 = runtime.module(define6);
-  main.import("table", child6);
   main.variable(observer("d3Fetch")).define("d3Fetch", ["require"], function(require){return(
 require('d3-fetch')
 )});
